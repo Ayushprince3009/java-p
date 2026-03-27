@@ -4,25 +4,31 @@ public class factor {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number:");
         int num = sc.nextInt();
-        factorial(num);
+        int result = factorial(num);
+        System.out.println(result);
     }
 
-    public static void factorial(int a){
-        int res = 1;
-        if(a == 0){
-            System.out.println(res);
+//    public static void factorial(int a){
+//        int res = 1;
+//        if(a == 0){
+//            System.out.println(res);
+//        }
+//        else if(a<0){
+//            System.out.println("Invalid Number");
+//        }
+//        else{
+//            while(a>0){
+//                res = res *a;
+//                a--;
+//            }
+//            System.out.println(res);
+//        }
+//    }
+    public static int factorial(int x){
+        int res =1;
+        for(int i=1; i<=x; i++){
+            res *= i;
         }
-        else if(a<0){
-            System.out.println("Invalid Number");
-        }
-        else{
-            while(a>0){
-                res = res *a;
-                a--;
-            }
-            System.out.println(res);
-        }
-
+        return res;
     }
-
-}
+  }
