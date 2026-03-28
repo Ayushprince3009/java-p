@@ -21,5 +21,6 @@ public class binomial {
 
         int result = (fact_a) / ((fact_b) * (fact_amr));
         return result;
+        //result returned
     }
 }
